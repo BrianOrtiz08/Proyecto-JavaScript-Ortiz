@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección Argentina</title>
+    <!-- Link CSS Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Link CSS Nativo -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header" id="headerId">
+        <div class="headerUno">
+            <button class="modoClaro botonesGenerales" id="modoClaroId">Dark Mode</button>
+            <input type="text" id="buscarId" class="buscar botonesGenerales" placeholder="¿Qué estás buscando?">
+        </div>
+
+        <div class="headerDos">
+            <h1 class="titulo" id="tituloId">Argentina</h1>
+        </div>
+
+        <div class="headerTres">
+            <select name="" id="opcionesOrdenarId" class="opcionesOrdenar botonesGenerales">
+                <option value="Default" class="opcion ">Ordenar por:</option>
+                <option value="1" class="opcion">Nombre</option>
+                <option value="2" class="opcion">Edad</option>
+                <option value="3" class="opcion">Cantidad de Partidos</option>
+            </select>
+
+            <button class="carrito botonesGenerales" id="carritoId">Carrito</button>
+        </div>
+    </header>
+
+    <p class="noEnc" id="noEncId"></p>
+
+    <div class="cargandoContainer" id="cargandoContainerId">
+        <div class="cargando"></div>
+        <p class="cargandoText">Cargando...</p>
+    </div>
+
+    <main class="contenedorCards" id="contenedorCardsId"></main>
+
+    <div class="fixedBox">
+        <button class="agregarJugador botonesGenerales" id="agregarJugadorId">Agregar Jugador</button>
+        <button class="eliminarJugador botonesGenerales" id="eliminarJugadorId">Eliminar Jugador</button>
+    </div>
+
+    <div class="cardEliminarJugador" id="cardEliminarJugadorId">
+        <label for="inputJugadorEliminado" class="inputDelete">Eliminar Jugador</label>
+        <input type="text" id="inputJugadorEliminadoId" class="inputJugadorEliminado"
+            placeholder="Ingrese el N° del jugador a eliminar">
+    </div>
+
+    <div class="cardAgregarJugador" id="cardAgregarJugadorId">
+        <div class="cardAddUno">
+            <div class="cardAddUnoA">
+                <label for="inputNombreId">Nombre y Apellido</label>
+                <input type="text" class="inputAdd" id="inputNombreId" placeholder="Ingrese el nombre y apellido del jugador">
+
+                <label for="inputEdadId">Edad</label>
+                <input type="text" class="inputAdd" id="inputEdadId" placeholder="Ingrese la edad del jugador">
+
+                <label for="inputClubId">Club</label>
+                <input type="text" class="inputAdd" id="inputClubId" placeholder="Ingrese el club del jugador">
+            </div>
+
+            <div class="cardAddUnoB">
+                <label for="inputLigaId">Liga</label>
+                <input type="text" class="inputAdd" id="inputLigaId" placeholder="Ingrese la liga del jugador">
+
+                <label for="inputImagenId">URL Imágen - <a href="https://www.mendozapost.com/deportes/uno-por-uno-imperdible-galeria-de-la-seleccion-argentina-en-qatar/">Ir a banco de imágenes</a></label>
+                <input type="text" class="inputAdd" id="inputImagenId" placeholder="Ingrese la URL de la imagen del jugador">
+
+                <label for="inputValorId">Valor de mercado</label>
+                <input type="text" class="inputAdd" id="inputValorId" placeholder="Ingrese el valor de mercado del jugador">
+            </div>
+        </div>
+
+        <div class="cardAddDos">
+            <div class="cardAddDosA">
+                <label for="inputValorId">Cantidad de partidos</label>
+                <input type="text" class="inputAdd" id="inputPartidosId" placeholder="Ingrese la cantidad de partidos del jugador en la Selección">
+            </div>
+
+            <button class="guardarJugador botonesGenerales" id="guardarJugadorId">Guardar Jugador</button>
+        </div>
+    </div>
+
+    <div class="cardCarrito" id="cardCarritoId">
+        <div class="cardCarritoUno">
+            <h5 class="cardCarritoTitulo">Carrito de compra</h5>
+            <button class="cardCarritoX botonesGenerales" id="cardCarritoXId">X</button>
+        </div>
+
+        <div class="cardCarritoDos" id="cardCarritoDosId">
+            
+        </div>
+
+        <p class="cardCarritoPrecio" id="cardCarritoPrecioId"></p>
+        
+        <div class="cardCarritoTres">
+            <button class="cardCarritoCerrar botonesGenerales" id="cardCarritoCerrarId">Cerrar</button>
+            <button class="cardCarritoFinalizar botonesGenerales" id="cardCarritoFinalizarId">Finalizar compra</button>
+        </div>
+    </div>
+
+    <div class="clima" id="climaId">
+        <p id="ciudadId"></p>
+
+        <div class="iconoContenedor">
+            <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" id="iconoId" class="icono">
+        </div>
+        
+        <p class="temp" id="tempId"></p>
+        <p class="tempMin" id="tempMinId"></p>
+        <p class="tempMax" id="tempMaxId"></p>
+    </div>
+
+    <footer class="footer" id="footerId">
+        <h3 class="footerCopy">&copy; Derechos reservados - <a href="https://astroweb.online/" class="footerEnlace" id="footerEnlaceId" target="_blank">AstroWeb</a></h3>
+
+        <p class="footerFecha" id="footerFechaId"></p>
+    </footer>
+
+    <!-- Link JS Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"></script>
+    <!-- Link JS Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Link JS Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Link JS's nativos -->
+    <script src="./js/main.js"></script>
+    <script src="./js/nodes.js"></script>
+    <script src="./js/events.js"></script>
+    <script src="./js/lightMode.js"></script>
+</body>
+
+</html>

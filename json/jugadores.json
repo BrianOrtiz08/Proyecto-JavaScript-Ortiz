@@ -1,0 +1,62 @@
+[
+    {
+        "numero": 1,
+        "nombre": "Lionel Messi",
+        "edad": 36,
+        "club": "Inter Miami",
+        "liga": "MLS",
+        "partidos": 175,
+        "valor": 100,
+        "imagen": "https://www.mendozapost.com/files/image/435/435569/637929a74c0bb_570_602!.jpg?s=3b9e3cd4d274f055f0a31b84e32e0032&d=1668885870"
+    },  
+    {
+        "numero": 2,
+        "nombre": "Angel Di Maria",
+        "edad": 35,
+        "club": "Benfica",
+        "liga": "Primeira Liga",
+        "partidos": 130,
+        "valor": 80,
+        "imagen": "https://www.mendozapost.com/files/image/435/435571/637929aecf541_570_602!.jpg?s=0deea19b9830ce7afa1d93036330e621&d=1668885889"
+    },
+    {
+        "numero": 3,
+        "nombre": "Rodrigo de Paul",
+        "edad": 29,
+        "club": "Atlético de Madrid",
+        "liga": "La Liga",
+        "partidos": 53,
+        "valor": 78,
+        "imagen": "https://www.mendozapost.com/files/image/435/435563/6379298c5e457_570_602!.jpg?s=4874775c8ff6b6957219661677441cf3&d=1668885500"
+    },
+    {
+        "numero": 4,
+        "nombre": "Alexis Mac Allister",
+        "edad": 24,
+        "club": "Liverpool",
+        "liga": "Premier League",
+        "partidos": 15,
+        "valor": 125,
+        "imagen": "https://www.mendozapost.com/files/image/435/435589/63792a2ff3d7f_570_602!.jpg?s=d44f010982cf150f4c47a6d28d77846f&d=1668885772"
+    },
+    {
+        "numero": 5,
+        "nombre": "Emiliano Martinez",
+        "edad": 31,
+        "club": "Aston Villa",
+        "liga": "Premier League",
+        "partidos": 28,
+        "valor": 13,
+        "imagen": "https://www.mendozapost.com/files/image/435/435595/63792a49a1c88_570_602!.jpg?s=b467d9f84b1c0b56cf9f0d7fec22b9c1&d=1668885172"
+    },
+    {
+        "numero": 6,
+        "nombre": "Enzo Fernández",
+        "edad": 22,
+        "club": "Chelse",
+        "liga": "Premier League",
+        "partidos": 11,
+        "valor": 150,
+        "imagen": "https://www.mendozapost.com/files/image/435/435597/63792a52217cb_570_602!.jpg?s=f7e7bb579337d1d0d122f449dc14fa53&d=1668885798"
+    } 
+]
