@@ -443,6 +443,26 @@ label{
     .fixedBox{
         width: auto;
     }
+
+    .cardCarrito{
+        width: 40%;
+    }
+
+    .cardAgregarJugador{
+        width: 70%;
+    }
+
+    .cardAddUnoA{
+        width: 45%;
+    }
+
+    .cardAddUnoB{
+        width: 55%;
+    }
+
+    .cardEliminarJugador {
+        width: 40%;
+    }
 }
 
 @media (max-width: 940px) {
