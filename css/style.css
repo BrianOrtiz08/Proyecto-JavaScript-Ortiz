@@ -1,12 +1,12 @@
 /* Reset */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 /* Estilos body */
-body{
+body {
     background-color: #282424;
     display: flex;
     flex-direction: column;
@@ -15,16 +15,16 @@ body{
     min-height: 100vh;
 }
 
-.bodyClaro{
+.bodyClaro {
     background-color: rgb(233, 227, 227);
 }
 
-a{
+a {
     color: black;
 }
 
 /* Estilos header */
-.header{
+.header {
     border-bottom: 1px solid white;
     display: flex;
     justify-content: space-between;
@@ -33,12 +33,13 @@ a{
     position: relative;
 }
 
-.headerUno, .headerTres{
+.headerUno,
+.headerTres {
     display: flex;
     column-gap: 1rem;
 }
 
-.titulo{
+.titulo {
     color: white;
     position: absolute;
     top: 50%;
@@ -46,43 +47,43 @@ a{
     transform: translate(-50%, -50%);
 }
 
-.tituloOscuro{
+.tituloOscuro {
     color: #282424;
 }
 
-.headerOscuro{
+.headerOscuro {
     border-bottom: 1px solid #282424;
 }
 
-.buscar{
+.buscar {
     text-align: center;
     width: 10rem;
 }
 
-.buscar::placeholder{
+.buscar::placeholder {
     color: #282424;
 }
 
-.buscarClaro::placeholder{
+.buscarClaro::placeholder {
     color: white;
 }
 
 /* Estilos generales para los botones */
-.botonesGenerales{
+.botonesGenerales {
     background-color: white;
     color: #282424;
     padding: .5rem;
     cursor: pointer;
 }
 
-.botonesGeneralesOscuros{
+.botonesGeneralesOscuros {
     background-color: #282424;
     color: white;
     border: 1px solid rgb(145, 138, 138);
 }
 
 /* Estilos para las cards y suc contenedor*/
-.contenedorCards{
+.contenedorCards {
     width: 100%;
     max-width: 1200px;
     margin: 1rem auto;
@@ -138,7 +139,7 @@ a{
 }
 
 /* Estilos para la caja fixed */
-.fixedBox{
+.fixedBox {
     display: flex;
     flex-direction: column;
     width: 10%;
@@ -149,7 +150,7 @@ a{
 }
 
 /* Estilos para la card de agregar un jugador*/
-.cardAgregarJugador{
+.cardAgregarJugador {
     position: fixed;
     top: -200%;
     left: 50%;
@@ -161,48 +162,55 @@ a{
     transition: all .5s;
 }
 
-.cardAgregarJugadorMostrar{
+.cardAgregarJugadorMostrar {
     top: 50%;
     transition: all .5s;
 }
 
-.cardAddUno{
+.cardAddUno {
     display: flex;
     column-gap: 1rem;
 }
 
-.cardAddDos{
+.cardAddDos {
     display: flex;
     column-gap: 1rem;
     align-items: center;
 }
 
-.cardAddDosA{
+.cardAddDosA {
     display: flex;
     flex-direction: column;
     width: 70%;
 }
 
-.guardarJugador{
+.guardarJugador {
     width: 30%;
     margin-top: .5rem;
     padding: 0.8rem 0.5rem;
 }
 
-.cardAddUnoA, .cardAddUnoB{
+.cardAddUnoA,
+.cardAddUnoB {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
-.inputAdd, .inputJugadorEliminado{
+.contenedorInputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputAdd,
+.inputJugadorEliminado {
     margin-bottom: 1rem;
     margin-top: .5rem;
     padding: .8rem .5rem;
     cursor: text;
 }
 
-label{
+label {
     text-decoration: underline;
     text-transform: uppercase;
 }
@@ -228,23 +236,23 @@ label{
     left: 50%;
 }
 
-.inputJugadorEliminado{
+.inputJugadorEliminado {
     margin-bottom: 0;
 }
 
-.noEnc{
+.noEnc {
     text-align: center;
     color: white;
     margin-top: 1rem;
     text-decoration: underline;
 }
 
-.noEncOscuro{
+.noEncOscuro {
     color: #282424;
 }
 
 /*Estilos para la card del carrito*/
-.cardCarrito{
+.cardCarrito {
     background-color: #74ccd8;
     position: fixed;
     top: 50%;
@@ -254,12 +262,12 @@ label{
     transition: all .5s;
 }
 
-.cardCarritoMostrar{
+.cardCarritoMostrar {
     left: 50%;
     transition: all .5s;
 }
 
-.cardCarritoUno{
+.cardCarritoUno {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -267,11 +275,11 @@ label{
     align-items: center;
 }
 
-.cardCarritoTitulo{
+.cardCarritoTitulo {
     font-size: 1.3rem;
 }
 
-.cardCarritoDosContenedor{
+.cardCarritoDosContenedor {
     display: flex;
     justify-content: space-between;
     padding: .5rem 1rem;
@@ -279,32 +287,32 @@ label{
     align-items: center;
 }
 
-.cardCarritoDosContenedorA{
+.cardCarritoDosContenedorA {
     display: flex;
     justify-content: space-between;
     width: 85%;
 }
 
-.cardCarritoPrecio{
+.cardCarritoPrecio {
     padding: 1rem;
     border-bottom: 1px solid #282424;
     font-weight: bold;
     text-align: right;
 }
 
-.cardCarritoTres{
+.cardCarritoTres {
     display: flex;
     justify-content: end;
     padding: 1rem;
     column-gap: 1rem;
 }
 
-.start{
+.start {
     text-align: start;
 }
 
 /*Estilos footer*/
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,33 +326,33 @@ label{
     margin-top: auto;
 }
 
-.footerCopy{
+.footerCopy {
     font-size: 1rem;
 }
 
-.footerEnlace{
+.footerEnlace {
     color: white;
 }
 
-.footerFecha{
+.footerFecha {
     text-transform: lowercase;
 }
 
-.footerFecha::first-letter{
+.footerFecha::first-letter {
     text-transform: uppercase;
 }
 
-.footerOscuro{
+.footerOscuro {
     color: #282424;
     border-top: 1px solid #282424;
 }
 
-.footerEnlaceOscuro{
+.footerEnlaceOscuro {
     color: #282424;
 }
 
 /*Estilos de Loader*/
-.cargandoContainer{
+.cargandoContainer {
     background-color: rgb(110, 152, 41);
     width: 100%;
     height: 100vh;
@@ -357,7 +365,7 @@ label{
     row-gap: 1rem;
 }
 
-.cargando{
+.cargando {
     width: 100px;
     height: 100px;
     border: 10px solid rgb(83, 99, 133);
@@ -366,26 +374,27 @@ label{
     animation: cargando 1s linear infinite;
 }
 
-.cargandoText{
+.cargandoText {
     text-transform: uppercase;
     letter-spacing: .2rem;
 }
 
 @keyframes cargando {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
-.borrarLoader{
+.borrarLoader {
     opacity: 0;
     transition: all 1s;
 }
 
-.clima{
+.clima {
     border: 1px solid white;
     position: fixed;
     left: .5rem;
@@ -398,7 +407,7 @@ label{
     border-radius: 1rem;
 }
 
-.climaOscuro{
+.climaOscuro {
     border: 1px solid #282424;
     color: #282424;
 }
@@ -412,7 +421,7 @@ label{
 }
 
 .icono {
-    position:absolute;
+    position: absolute;
     left: -100%;
     right: -100%;
     top: -100%;
@@ -422,7 +431,7 @@ label{
     min-width: 100%;
 }
 
-.temp{
+.temp {
     font-size: 1.4rem;
     font-weight: bold;
     padding-bottom: 1rem;
@@ -430,33 +439,33 @@ label{
 
 /*MEDIA QUERIES*/
 @media (max-width: 1400px) {
-    .contenedorCards{
+    .contenedorCards {
         width: 70%;
     }
 }
 
 @media (max-width: 1220px) {
-    .contenedorCards{
-       grid-template-columns: repeat(2, 1fr);
+    .contenedorCards {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .fixedBox{
+    .fixedBox {
         width: auto;
     }
 
-    .cardCarrito{
+    .cardCarrito {
         width: 40%;
     }
 
-    .cardAgregarJugador{
+    .cardAgregarJugador {
         width: 70%;
     }
 
-    .cardAddUnoA{
+    .cardAddUnoA {
         width: 45%;
     }
 
-    .cardAddUnoB{
+    .cardAddUnoB {
         width: 55%;
     }
 
@@ -466,29 +475,74 @@ label{
 }
 
 @media (max-width: 940px) {
-    .contenedorCards{
-       grid-template-columns: 1fr;
+    .contenedorCards {
+        grid-template-columns: 1fr;
+    }
+
+    .cardAgregarJugador{
+        width: 50%;
+    }
+
+    .contenedorInputs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    label{
+        font-size: .8rem;
+    }
+
+    .cardAddUnoA, .cardAddUnoB{
+        width: 100%;
+    }
+
+    .cardAddDosA{
+        width: 100%;
+    }
+
+    .cardAddDos{
+        flex-direction: column;
+    }
+
+    .inputAdd{
+        width: 100%;
+        margin: .3rem 0 .5rem 0;
+        padding: .6rem;
+    }
+
+    .cardAddUno{
+        flex-direction: column;
     }
 }
 
 @media (max-width: 830px) {
-    #modoClaroId, #opcionesOrdenarId{
+    #modoClaroId,
+    #opcionesOrdenarId {
         display: none;
+    }
+
+    .cardAgregarJugador{
+        width: 70%;
+    }
+
+    .guardarJugador {
+        width: auto;
     }
 }
 
 @media (max-width: 620px) {
-    #climaId, #buscarId{
+    #climaId,
+    #buscarId {
         display: none;
     }
 
-    #modoClaroId{
+    #modoClaroId {
         display: block;
     }
 }
 
 @media (max-width: 580px) {
-    .footer{
+    .footer {
         align-items: start;
     }
 }
